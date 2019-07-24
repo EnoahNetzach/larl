@@ -1,0 +1,15 @@
+package com.test;
+
+import java.util.*;
+
+final public class Test {
+    public Boolean isEnabled;
+
+    public String name = "Pippo";
+
+    public List<String> letters = Arrays.asList("a", "b", "c", "d");
+
+    public List<List<List<String>>> cmplx = Arrays.asList(Arrays.asList(Arrays.asList("a", "b"), Arrays.asList("c", "d"), Arrays.asList("e", "f")), Arrays.asList(Arrays.asList("g", "h"), Arrays.asList("i", "j"), Arrays.asList("k", "l")));
+
+    public Map.Entry<String, Map.Entry<String, Map.Entry<Boolean, Integer>>> data = new AbstractMap.SimpleEntry<>("asdf", new AbstractMap.SimpleEntry<>("qwer", new AbstractMap.SimpleEntry<>(true, 42)));
+}

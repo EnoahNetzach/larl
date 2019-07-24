@@ -1,0 +1,11 @@
+export class Test {
+    isEnabled = undefined;
+
+    name = "Pippo";
+
+    letters = ["a", "b", "c", "d"];
+
+    cmplx = [[["a", "b"], ["c", "d"], ["e", "f"]], [["g", "h"], ["i", "j"], ["k", "l"]]];
+
+    data = ["asdf", "qwer", true, 42];
+}

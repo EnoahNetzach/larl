@@ -1,0 +1,13 @@
+package com.test
+
+class Test {
+    var isEnabled: Boolean? = null
+
+    val name: String = "Pippo"
+
+    val letters: MutableList<String> = mutableListOf("a", "b", "c", "d")
+
+    val cmplx: MutableList<List<List<String>>> = mutableListOf(listOf(listOf("a", "b"), listOf("c", "d"), listOf("e", "f")), listOf(listOf("g", "h"), listOf("i", "j"), listOf("k", "l")))
+
+    val data: Pair<String, Pair<String, Pair<Boolean, Int>>> = Pair("asdf", Pair("qwer", Pair(true, 42)))
+}

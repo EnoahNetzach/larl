@@ -1,0 +1,23 @@
+mod com {
+    mod test {
+        struct Test {
+            is_enabled: bool,
+            name: String,
+            letters: Vec<String>,
+            cmplx: Vec<[[String; 2]; 3]>,
+            data: (String, String, bool, i32),
+        }
+
+        impl Default for Test {
+            fn default() -> Self {
+                Self {
+                    is_enabled: Default::default(),
+                    name: String::from("Pippo"),
+                    letters: vec![String::from("a"), String::from("b"), String::from("c"), String::from("d")],
+                    cmplx: vec![[[String::from("a"), String::from("b")], [String::from("c"), String::from("d")], [String::from("e"), String::from("f")]], [[String::from("g"), String::from("h")], [String::from("i"), String::from("j")], [String::from("k"), String::from("l")]]],
+                    data: (String::from("asdf"), String::from("qwer"), true, 42),
+                }
+            }
+        }
+    }
+}

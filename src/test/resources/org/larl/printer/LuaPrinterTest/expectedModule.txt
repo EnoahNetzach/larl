@@ -1,0 +1,22 @@
+if com == nil then
+  com = {}
+end
+
+if com.test == nil then
+  com.test = {}
+end
+
+com.test.Test = {
+  isEnabled = nil,
+  name = "Pippo",
+  letters = {"a", "b", "c", "d"},
+  cmplx = {{{"a", "b"}, {"c", "d"}, {"e", "f"}}, {{"g", "h"}, {"i", "j"}, {"k", "l"}}},
+  data = {"asdf", "qwer", true, 42}
+}
+
+function com.test.Test:new(o)
+  o = o or {}
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end

@@ -1,0 +1,11 @@
+export class Test {
+    isEnabled?: boolean = undefined;
+
+    name: string = "Pippo";
+
+    letters: Array<string> = ["a", "b", "c", "d"];
+
+    cmplx: Array<[[string, string], [string, string], [string, string]]> = [[["a", "b"], ["c", "d"], ["e", "f"]], [["g", "h"], ["i", "j"], ["k", "l"]]];
+
+    data: [string, string, boolean, number] = ["asdf", "qwer", true, 42];
+}
