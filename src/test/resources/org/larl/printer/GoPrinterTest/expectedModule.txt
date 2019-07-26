@@ -1,0 +1,18 @@
+package test
+
+type Test struct {
+    isEnabled bool
+    name string
+    letters []string
+    cmplx [][3][2]string
+    data struct {_0 string; _1 string; _2 bool; _3 int32}
+}
+
+func New() Test {
+    return Test {
+        name: "Pippo",
+        letters: []string{"a", "b", "c", "d"},
+        cmplx: [][3][2]string{[3][2]string{[2]string{"a", "b"}, [2]string{"c", "d"}, [2]string{"e", "f"}}, [3][2]string{[2]string{"g", "h"}, [2]string{"i", "j"}, [2]string{"k", "l"}}},
+        data: struct {_0 string; _1 string; _2 bool; _3 int32}{"asdf", "qwer", true, 42},
+    }
+}

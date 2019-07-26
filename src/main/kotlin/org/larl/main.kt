@@ -40,6 +40,7 @@ fun main() {
     val javaScriptPrinter = JavaScriptPrinter("./")
     val typeScriptPrinter = TypeScriptPrinter("./")
     val flowPrinter = FlowPrinter("./")
+    val goPrinter = GoPrinter("./")
 
     javaPrinter.print(extractor.modules)
     kotlinPrinter.print(extractor.modules)
@@ -47,4 +48,5 @@ fun main() {
     javaScriptPrinter.print(extractor.modules)
     typeScriptPrinter.print(extractor.modules)
     flowPrinter.print(extractor.modules)
+    goPrinter.print(extractor.modules)
 }
